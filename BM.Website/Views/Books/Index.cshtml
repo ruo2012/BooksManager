@@ -1,0 +1,13 @@
+﻿@using BM.Shared.Models.Domain;
+@model IEnumerable<Book>
+@{
+    ViewBag.Title = "Index";
+}
+
+@foreach(Book b in Model)
+{
+    <p>@b.Id - @b.Title - @b.Author = @b.ISBN</p>
+    <p></p>
+}
+
+
